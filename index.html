@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+
+    <script>
+      function call() {
+        const ele = document.getElementById("pass");
+        if (ele.type === "password") {
+          ele.type = "text";
+        } else {
+          ele.type = "password";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="main">
+      <div id="left-top-left"></div>
+      <div id="left-top-right"></div>
+      <div id="left-center"></div>
+      <div id="left-bottom"></div>
+      <div id="right"></div>
+    </div>
+  </body>
+</html>
