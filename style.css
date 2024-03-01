@@ -13,28 +13,67 @@ body {
 #main {
   width: 100%;
   height: 100%;
-  background-color: red;
+  /* background-color: red; */
+  background-color: #dadadae5;
   display: grid;
   grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 30% 50% 20%;
+  grid-template-rows: 26% 56% 18%;
 }
 
 #left-top-left {
-  background-color: aqua;
+  /* background-color: aqua; */
+}
+
+.diamond {
+  width: 20px;
+  height: 20px;
+  rotate: 45deg;
+  background-color: black;
+  margin: 30px;
 }
 
 #left-top-right {
-  background-color: blue;
+  /* background-color: blue; */
+  text-align: right;
+  margin: 30px;
+  font-weight: 800;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#left-top-right h4 {
+  margin-bottom: 20px;
 }
 
 #left-center {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   grid-column: 1 / 3;
+  margin: 30px;
+  margin-right: 40px;
+}
+
+#left-center p {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+  line-height: 1.2;
+}
+
+#left-center p:nth-child(2n) {
+  /* text-align: center; */
+  margin-left: 80px;
 }
 
 #left-bottom {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   grid-column: 1 / 3;
+  margin: 30px;
+}
+
+#left-bottom p {
+  width: 60%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #right {
@@ -47,4 +86,47 @@ body {
 
   /* grid-column-start: 3; */
   grid-column: 3;
+  background-image: url(https://endearing-genie-98de4c.netlify.app/img/deepak.jpeg);
+  padding: 30px;
+  margin: 10px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: red;
+  padding: 30px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow a i {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.arrow a {
+  text-decoration: none;
+  color: white;
+}
+
+.arrow:hover {
+  border: px dashed antiquewhite;
+  border-radius: 10px;
+  transition: all ease-in-out 5s;
+  transition-duration: 5s;
+  background: linear-gradient(green, red, white, blue, gold);
+}
+
+.arrow:hover a {
+  transition-duration: 5s;
+  rotate: 90deg;
+  color: black;
 }
